@@ -68,11 +68,11 @@ SELECT nom FROM `employe` WHERE nom LIKE '__u%';
 
 -- 18
 
-SELECT `nom`, `salaire` FROM `employe` ORDER BY salaire ASC;
+SELECT `nom`, `salaire` FROM `employe` ORDER BY salaire ASC HAVING nodep= 41;
 
 -- 19
 
-SELECT `nom`, `salaire` FROM `employe` ORDER BY salaire DESC;
+SELECT `nom`, `salaire` FROM `employe` ORDER BY salaire DESC HAVING nodep= 41;
 
 -- 20
 
