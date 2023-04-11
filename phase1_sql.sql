@@ -28,7 +28,7 @@ SELECT nom, nodept FROM `dept` WHERE nodept > 40;
 
 -- 08
 
-???
+SELECT nom prenom FROM employe ORDER BY nom > prenom;
 
 -- 09
 
