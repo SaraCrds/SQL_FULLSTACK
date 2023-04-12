@@ -12,7 +12,7 @@ SELECT employe.nom FROM employe JOIN dept ON employe.nodep = dept.nodept WHERE d
 
 -- 04 Rechercher le nom et le salaire des employés qui gagnent plus que leur patron, et le nom et le salaire de leur patron.
 
---  Qui est leur patron? Le président? Les différents directeurs de région?
+SELECT t1.nom, t1.salaire, tsup.nom AS 'nom_sup', tsup.salaire AS 'salaire_sup' FROM employe as tsup LEFT OUTER JOIN employe AS t1 ON t1.nosup = tsup.noemp WHERE t1.salaire > tsup.salaire;
 
 -- 05 Rechercher le nom et le titre des employés qui ont le même titre que Amartakaldire.
 
