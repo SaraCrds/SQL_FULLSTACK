@@ -40,7 +40,7 @@ SELECT nom, titre, salaire FROM `employe` WHERE titre = 'représentant' OR titre
 
 -- 11
 
-SELECT nom, titre, nodep, salaire FROM `employe` WHERE nodep = 34 AND titre = 'représentant' OR nodep = 34 AND titre = 'secrétaire';
+SELECT nom, titre, nodep, salaire FROM `employe` WHERE nodep = 34 AND (titre = 'représentant' OR titre = 'secrétaire');
 
 -- 12
 

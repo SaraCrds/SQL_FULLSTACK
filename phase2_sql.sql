@@ -37,4 +37,4 @@ SELECT AVG(salaire) AS moy_salaire, titre FROM `employe` GROUP BY titre HAVING m
 
 -- 10
 
-SELECT COUNT(tauxcom) AS nmbr_tauxcom, COUNT(salaire) AS nmbr_salaire FROM employe;
+SELECT COUNT(tauxcom) AS nmbr_tauxcom, COUNT(salaire) AS nmbr_salaire FROM employe WHERE tauxcom AND salaire IS NOT NULL;
